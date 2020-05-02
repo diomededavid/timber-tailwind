@@ -1,0 +1,37 @@
+{
+  "name": "timber-tailwind-boilerplate",
+  "version": "0.1.0",
+  "description": "A Timber wordpress theme boilerplate using tailwindcss.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --mode=development --watch",
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "postinstall": "composer i; ./node_modules/.bin/tailwind init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignism/timber-tailwind-boilerplate.git"
+  },
+  "author": "Mark Brand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ignism/timber-tailwind-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ignism/timber-tailwind-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "autoprefixer": "^9.3.1",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "cssnano": "^4.1.7",
+    "mini-css-extract-plugin": "^0.4.4",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "tailwindcss": "^0.6.6",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
